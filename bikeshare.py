@@ -34,7 +34,7 @@ def get_city():
     '''
     while True:
         try:
-            city = input('Hello! Let\'s explore some US bikeshare data!\nWould you like to see data for Chicago, New York, or Washington?\n')
+            city = input('Hello! Let\'s explore some US bikeshare data!\nWould you like to show data for Chicago, New York, or Washington????\n')
         except ValueError:
             print('That is not a valid answer. Please try again.')
         if city.lower() in city_data.keys():
