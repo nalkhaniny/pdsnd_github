@@ -34,7 +34,7 @@ def get_city():
     '''
     while True:
         try:
-            city = input('Hello! Let\'s explore some US bikeshare data!\nWould you like to see data for Chicago, New York, or Washington?\n')
+            city = input('Hello! Let\'s explore some US bikeshare data!\nWould you like to show data for Chicago, New York, or Washington????\n')
         except ValueError:
             print('That is not a valid answer. Please try again.')
         if city.lower() in city_data.keys():
@@ -227,7 +227,7 @@ def user_statistics(filtered_city_data):
     print('\n')
  
 
-def display_data(filtered_city_data, row):
+def display(filtered_city_data, row):
     """
     Asks the user if they would you like to view individual trip data and loads the raw data 
     Args:
@@ -275,7 +275,7 @@ def main():
     display_month_day_hour_statistics(filtered_city_data)
     
     #8) see data details
-    see_data = display_data(filtered_city_data, row=76)
+    see_data = display(filtered_city_data, row=76)
 
     #9) restart if you wish
     restart = input('\nWould you like to restart? Enter yes or no.\n')
